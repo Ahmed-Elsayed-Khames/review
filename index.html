@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveiw Data</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #282a37;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #3b3e4d;
+            padding: 20px;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .order-details {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .order-details th, .order-details td {
+            padding: 10px;
+            border-bottom: 1.5px solid #fff;
+            padding: 20px;
+            text-align: right;
+
+        }
+        .order-details th, .order-details th {
+            padding: 10px;
+            border-bottom: 1.5px solid #fff;
+            padding: 20px;
+            text-align: left;
+
+        }
+        .total {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .note {
+            font-size: 14px;
+            color: #d83535;
+            margin-top: 10px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px ;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition-duration: 0.5s;
+        }
+
+        a:hover{
+            background-color: #333 ;
+            border: none;
+        }
+        .btn {
+            padding: 10px 15px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .btn-confirm {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-cancel {
+            background-color: #dc3545;
+            color: white;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        ol li{
+            padding: none;
+
+        }
+
+        .head{
+            display: flex;
+            height: 60px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #logo{
+            width: 100px;
+        }
+
+        ol{
+            list-style: none;
+            list-style-position: outside;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .head{
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+            #logo{
+                order: -1;
+            }
+            .btn {
+                width: 100%;
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="head">
+            <h2>Order Review</h2>
+            <img src="./img/logo.svg" alt="logo" id="logo">
+        </div>
+        <table class="order-details">
+            <tr>
+                <th>Order ID</th>
+                <td>22</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>Ahmed Khames</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>01022106495</td>
+            </tr>
+            <tr>
+                <th>Car Type</th>
+                <td>Marcedes</td>
+            </tr>
+            <tr>
+                <th>Car Model</th>
+                <td>C300</td>
+            </tr>
+            <tr>
+                <th>Services</th>
+                <td>
+                <ol>
+                    <li>Casoline 95</li>
+                    <li>Oil Change</li>
+                    <li>Engine Check</li>
+                </ol>
+            </td>
+            </tr>
+            <tr>
+                <th>Breakdowns</th>
+                <td><ol>
+                    <li>Battery Issue</li>
+                    <li>Car Can't Start</li>
+                    <li>A/C Issue</li>
+                </ol>
+            </td>
+            </tr>
+            <tr>
+                <th>Location </th>
+                <td><a href="https://google.com/maps/place/31.3939878,30.4148309">Location </a></td>
+            </tr>
+        </table>
+
+        <p class="note">
+            NOTE: If you cliced confirm , 
+            our car will start move to your location. Please review your order carefully before proceeding.
+        </p>
+
+        <div class="buttons">
+            <button class="btn btn-confirm" >Confirm</button>
+            <button class="btn btn-cancel" >Cancel</button>
+        </div>
+    </div>
+
+</body>
+</html>
